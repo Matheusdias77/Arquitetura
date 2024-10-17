@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <div class="calc">
+        <h3>Conversão de Temperatura</h3>
+        <label>Digite o Número:</label>
+        <input type="number" id="numero">
+        <button type="button" onclick="calcularConversao()">Calcular</button>
+    </div>
+    <div id="historico">
+        <h4>Histórico de Conversões</h4>
+    </div>
+
+    <script>
+        function calcularConversao() {
+            const celsius = document.getElementById('numero').value;
+            if (celsius === '') {
+                alert('Por favor, digite um número.');
+                return;
+            }
+
+            const fahrenheit = (celsius * 9/5) + 32;
+
+            const historicoDiv = document.getElementById('historico');
+            const p = document.createElement('p');
+            p.textContent = `${celsius}°C = ${fahrenheit.toFixed(2)}°F`;
+            historicoDiv.appendChild(p);
+
+            document.getElementById('numero').value = '';
+        }
+    </script>
+</body>
+</html>
