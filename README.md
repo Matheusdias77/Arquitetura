@@ -29,6 +29,7 @@ Uma aplicação que permite o cadastro de usuários, com validação de idade e 
 
 **Como a separação em camadas facilita a manutenção e a escalabilidade da aplicação?**
 A separação em camadas promove modularidade, facilita atualizações, melhora a testabilidade, aumenta a escalabilidade e facilita a colaboração em equipe.
+
 ---
 
 ## 3. Processador de Texto com Pipe e Filtros
