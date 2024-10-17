@@ -1,4 +1,3 @@
-/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,7 +9,6 @@ body {
     height: 100vh;
 }
 
-/* Estilo da calculadora */
 .calc {
     background-color: #ffffff;
     padding: 20px;
